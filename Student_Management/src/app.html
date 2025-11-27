@@ -1,0 +1,17 @@
+<h2>Student List</h2>
+
+<table border="1" cellpadding="10">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Course</th>
+  </tr>
+
+  <tr *ngFor="let s of students">
+    <td>{{ s.id }}</td>
+    <td>{{ s.name }}</td>
+    <td>{{ s.course }}</td>
+  </tr>
+</table>
+
+<app-student></app-student>
